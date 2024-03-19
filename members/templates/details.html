@@ -1,0 +1,35 @@
+{% extends "master.html" %}
+
+{% block title %}
+  {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+{% block content %}
+  <style>
+    /* Your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      margin: 10px 0;
+    }
+    a {
+      color: blue;
+    }
+  </style>
+
+  <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  
+  <p>Phone: {{ mymember.phone }}</p>
+  <p>Member since: {{ mymember.joined_date }}</p>
+  
+  <p>Back to <a href="/members">Members</a></p>
+  
+{% endblock %}

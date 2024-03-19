@@ -1,0 +1,45 @@
+{% extends "master.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}My Tennis Club{% endblock %}</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    h3 {
+      color: #007bff;
+    }
+    p {
+      color: #555;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+{% block content %}
+  <h1>My Tennis Club</h1>
+
+  <h3>Members</h3>
+  
+  <p>Check out all our <a href="members/">members</a></p>
+  
+{% endblock %}
+
+</body>
+</html>
